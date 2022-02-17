@@ -16,7 +16,7 @@ class Movie extends Model
         return $this->hasMany(Cast::class);
     }
     public function category(){
-        return $this->hasOne(Category::class);
+        return $this->belongsTo(Category::class);
     }
     public function copy(){
         return $this->hasMany(Copies::class);
