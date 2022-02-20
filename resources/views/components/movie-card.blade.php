@@ -1,9 +1,11 @@
 @props(['movie'])
+
 <article
     class="transition-colors duration-300 hover:bg-gray-700 border border-black border-opacity-0 hover:border-opacity-5 rounded-xl">
     <div class="py-5 px-5">
         <div class="space-x-2 mb-2.5">
             <a href="#"
+
                class="px-3 py-1 border border-yellow-400 rounded-full text-yellow-400 hover:text-yellow-700 hover:border-yellow-700 text-xs uppercase font-semibold"
                style="font-size: 10px">{{$movie->category['name']}}  </a>
             <a href="#"
