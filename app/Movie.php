@@ -10,15 +10,17 @@ class Movie extends Model
 {
     protected $guarded= [];
     protected $primaryKey = 'id';
+    protected $relations = ['cast','categories','loans'];
 
 
     public function cast(){
         return $this->hasMany(Cast::class);
     }
     public function category(){
-        return $this->hasOne(Category::class);
+        return $this->belongsTo(Category::class, 'categories_id','id');
     }
     public function copy(){
-        return $this->hasMany(Copies::class);
+        return $this->hasMany(Copy::class);
     }
+
 }

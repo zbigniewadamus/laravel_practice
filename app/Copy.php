@@ -8,9 +8,9 @@ class Copy extends Model
 {
     public function movie()
     {
-        return $this->hasOne(Category::class);
+        return $this->hasOne(Movie::class);
     }
     public function loan(){
-        return $this->hasOne(Copy::class);
+        return $this->hasOne(Loan::class);
     }
 }

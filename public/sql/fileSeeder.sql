@@ -127,7 +127,7 @@ INSERT INTO wypozyczalnia.categories (name) VALUES
                                                 ('akcja'),
                                                 ('sci-fi');
 
-INSERT INTO wypozyczalnia.movies (id,title,yearOfProduction,price,cover,description,category_id) VALUES
+INSERT INTO wypozyczalnia.movies (id,title,yearOfProduction,price,cover,description,categories_id) VALUES
                                                                                                      (1,'Wesele',2004,10.0,'wesele.jpg','Bogaty mieszkaniec małego miasteczka urządza córce wesele. Kiedy zabawa rozkręca się na całego, wszystko zaczyna się walić.',2),
                                                                                                      (2,'Ghostbusters',1984,5.5,'ghostbusters.jpg','Trzech doktorów parapsychologii zakłada firmę zajmującą się zwalczaniem duchów. Wkrótce będą musieli zmierzyć się z pradawną złą mocą opanowującą miasto.',6),
                                                                                                      (3,'Terminator',1984,8.5,'terminator.jpg','Elektroniczny morderca zostaje wysłany z przyszłości do roku 1984, by zabić matkę przyszłego lidera rewolucji. W ślad za nim rusza Kyle Reese, który ma chronić kobietę.',6),

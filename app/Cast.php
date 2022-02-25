@@ -9,6 +9,10 @@ class Cast extends Model
     protected $table = 'cast';
 
     public function actor(){
-        return $this->hasMany(Actor::class);
+        return $this->hasMany('App\Actor');
+    }
+
+    public function movie(){
+        return $this->hasMany('App\Movie');
     }
 }

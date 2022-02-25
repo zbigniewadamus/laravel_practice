@@ -7,7 +7,7 @@
             <a href="#"
 
                class="px-3 py-1 border border-yellow-400 rounded-full text-yellow-400 hover:text-yellow-700 hover:border-yellow-700 text-xs uppercase font-semibold"
-               style="font-size: 10px">{{$movie->category['name']}}  </a>
+               style="font-size: 10px">{{$movie->category['name']}}</a>
             <a href="#"
                class="px-3 py-1 rounded-full text-black bg-yellow-400 hover:bg-yellow-700 text-xs uppercase font-semibold"
                style="font-size: 10px">{{$movie->yearOfProduction}}</a>
@@ -35,6 +35,7 @@
 
                 <p class="mt-4 text-xs">
                     Obsada:
+
 
 
 

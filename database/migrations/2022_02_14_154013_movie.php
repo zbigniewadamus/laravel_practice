@@ -20,8 +20,7 @@ class Movie extends Migration
             $table->double('price');
             $table->string('cover')->unique();
             $table->longText('description');
-            $table->unsignedInteger('category_id');
-            $table->foreign('category_id')->references('id')->on('categories');
+            $table->foreignId('categories_id');
         });
     }
 
@@ -32,10 +31,6 @@ class Movie extends Migration
      */
     public function down()
     {
-        Schema::table('movies', function (Blueprint $table){
-            $table->dropForeign(['category_id']);
-
-        });
         Schema::dropIfExists('movies');
     }
 }

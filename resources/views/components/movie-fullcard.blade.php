@@ -26,7 +26,7 @@
                 <div class="space-x-2">
                     <a href="#"
                        class="px-3 py-1 border border-yellow-400 rounded-full text-yellow-400 hover:text-yellow-700 hover:border-yellow-700 text-xs uppercase font-semibold"
-                      >{{$movie->name}}
+                      >...
                     </a>
                 </div>
 

@@ -7,11 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Category extends Model
 {
-//    protected $primaryKey = 'id';
+    protected $primaryKey = 'id';
 
     protected $table = 'categories';
 
     public function movie(){
-        return $this->hasMany(Movie::class);
+        return $this->belongsToMany(Movie::class);
     }
 }
